@@ -75,6 +75,95 @@ mvn test
 
 ## 🔐 Payment Gateway Notes
 
+
+# POS QR System
+
+A professional Point of Sale (POS) system built using Java and Spring Boot. Includes QR code generation for sales receipts, product tracking, and more.
+
+---
+
+## 📦 Features
+
+- ✅ RESTful API for managing products and sales
+- 📷 QR code generation for receipts
+- 📊 H2 in-memory database for testing
+- 🧩 Swagger/OpenAPI integration
+- 📁 File upload and static storage for QR images
+- 🧪 JUnit and Spring Boot testing framework
+
+---
+
+## 🏗️ Project Structure
+
+```
+pos-qr-java/
+├── pom.xml
+├── README.md
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/posqr/
+│   │   │   ├── controller/
+│   │   │   ├── model/
+│   │   │   ├── service/
+│   │   │   ├── repository/
+│   │   │   └── PosQrApplication.java
+│   │   └── resources/
+│   │       ├── static/qrcodes/
+│   │       └── application.properties
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 17+
+- Maven 3.6+
+
+### Run Application
+```bash
+mvn spring-boot:run
+```
+
+### Build JAR
+```bash
+mvn clean package
+java -jar target/pos-qr-system-1.0.0.jar
+```
+
+---
+
+## 🔧 API Docs
+Access Swagger UI at:
+```
+http://localhost:8080/swagger-ui.html
+```
+
+---
+
+## 🧪 Running Tests
+```bash
+mvn test
+```
+
+---
+
+## 📁 QR Code Output
+Generated QR images are stored in:
+```
+src/main/resources/static/qrcodes/
+```
+
+---
+
+## 📜 License
+MIT License. See `LICENSE` file for details.
+
+---
+
+## 🤝 Contributions
+Pull requests and feature suggestions are welcome!
+
 * **Sadad**: [https://sadad.shaparak.ir](https://sadad.shaparak.ir)
 * **Sep**: [https://sep.shaparak.ir](https://sep.shaparak.ir)
 
